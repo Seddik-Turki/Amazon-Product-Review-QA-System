@@ -14,6 +14,8 @@
 RAG extends the classic retriever-reader architecture by swapping the reader for a generator.
 </p>
 
+</br>
+
 ## Visuals
 ```python
 item_id = "B0074BW614" # corresponds to one of Amazon’s Fire tablets
@@ -50,7 +52,7 @@ query = "Is it good for reading?"
 ## Project Structure Overview
 The code is structured into key components, each corresponding to different stages of the QA process.</br>
 All the code is located in the `Amazon Product Review QA System.ipynb` notebook.
-The original project can be found on my (kaggle profile)[https://www.kaggle.com/code/seddiktrk/hf-transformers-qa/edit].
+The original project can be found on my [kaggle profile](https://www.kaggle.com/code/seddiktrk/hf-transformers-qa/edit).
 The `QA` system is built using the `Haystack` library, using several of its components: the retriever,the document store and the reader.</br>
 
 </br>
