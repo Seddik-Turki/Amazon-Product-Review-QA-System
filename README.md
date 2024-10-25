@@ -54,7 +54,7 @@ The `QA` system is built using the `Haystack` library, using several of its comp
 
 
 ### The Dataset
-📄 This project utilizes the (SubjQA)[https://huggingface.co/datasets/megagonlabs/subjqa] dataset, featuring over 10,000 customer reviews across six domains but in this project I have focused on the `Electronics` domain Each review is paired with a question that can be answered using content from the review, focusing on subjective experiences.
+📄 This project utilizes the [SubjQA](https://huggingface.co/datasets/megagonlabs/subjqa) dataset, featuring over 10,000 customer reviews across six domains but in this project I have focused on the `Electronics` domain Each review is paired with a question that can be answered using content from the review, focusing on subjective experiences.
 
 ### The Retriever
 
