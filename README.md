@@ -8,6 +8,7 @@
           border-width:3px; 
           border-color:#d0eefc; 
           border-style:solid;
-          border-radius:6px"> 🔍 In this projet we'll tackle a common NLP task: <code>Question Answering (QA)</code> which involves retrieving relevant documents and extracting answers from them, commonly through extractive QA, where the answer is identified as a span of text within a document. Modern QA systems, like those used in search engines and intelligent assistants, follow a two-stage process of document retrieval and answer extraction.
+          border-radius:6px"> 🔍 This project presents a hybrid Question Answering <code>(QA)</code> system for answering questions about Amazon products based on customer reviews.
+          The project involves retrieving relevant documents to the user's query and extracting answers from them, commonly through <code>extractive QA</code>, where the answer is identified as a span of text within a document, or by leveraging <code>generative QA</code> where a model generates an answer based on the retrived docs and the query.
 </p>
 
