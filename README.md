@@ -124,5 +124,5 @@ In contrast, the F-score provides a more lenient measure by calculating the harm
 ## Conclusion
 In this project, I have developed a QA system designed to answer customers question based on Amazon product reviews. I have explored various techniques and experimented with various tecnologies. 
 
-Looking ahead, there are numerous opportunities to enhance the capabilities of our system. Scaling the project with larger datasets, such as the (Amazon reviews dataset)[https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023] containing millions of reviews, could significantly improve the system's performance.
+Looking ahead, there are numerous opportunities to enhance the capabilities of our system. Scaling the project with larger datasets, such as the [Amazon reviews dataset](https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023) containing millions of reviews, could significantly improve the system's performance.
 Additionally, integrating advanced techniques for RAG, such as `query expansion`, `reranking` of retrieved documents, and implementing chat `memory` for contextual understanding, can further enhance the performance of the system and the user experience as well.
