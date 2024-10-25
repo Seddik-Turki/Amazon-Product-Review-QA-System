@@ -45,6 +45,7 @@ query = "Is it good for reading?"
 ֎ &nbsp; &nbsp;Yes, the Kindle Fire is considered <code>good for reading</code>. Users appreciate the crisp and clear colors, which enhance the reading experience, and the device's light weight makes it comfortable to hold. However, some users note that the battery life may not last long and that the screen can glare in bright sunlight. Overall, many find it suitable for reading, though individual comfort may vary, especially for those with physical limitations.</p>
 </div>
 
+</br>
 
 ## Project Structure Overview
 The code is structured into key components, each corresponding to different stages of the QA process.</br>
@@ -52,9 +53,12 @@ All the code is located in the `Amazon Product Review QA System.ipynb` notebook.
 The original project can be found on my (kaggle profile)[https://www.kaggle.com/code/seddiktrk/hf-transformers-qa/edit].
 The `QA` system is built using the `Haystack` library, using several of its components: the retriever,the document store and the reader.</br>
 
+</br>
 
 ### The Dataset
 📄 This project utilizes the [SubjQA](https://huggingface.co/datasets/megagonlabs/subjqa) dataset, featuring over 10,000 customer reviews across six domains but in this project I have focused on the `Electronics` domain Each review is paired with a question that can be answered using content from the review, focusing on subjective experiences.
+
+</br>
 
 ### The Retriever
 
@@ -86,6 +90,7 @@ retrieved_docs = bm25_retriever.retrieve(
  'embedding': None,
  'id': '4a6aa9c7808ebba8d35aeecbcc3c30fe'}
 ```
+</br>
 
 ### The Reader
 In the system, I initially focused on extracting answers from customer reviews by identifying text spans that contain relevant information.
@@ -95,6 +100,8 @@ For the extractive QA, I have opted for the `MiniLM` model fine-tuned on the SQu
 I have also incorporated the retrieval-augmented generation `(RAG)` technique.
 In this setup, we replace the traditional reader with an LLM to generate answers, in this case I have used the `ChatGPT`.
 The system leverages the relevant documents based on user's queries and combines them with the query into a structured prompt. This enables the LLM to synthesize information from multiple passages, producing coherent and contextually rich responses tailored to the user’s question.
+
+</br>
 
 ### Evaluation
 #### Evaluating the Retriever
@@ -109,6 +116,8 @@ In contrast, the F-score provides a more lenient measure by calculating the harm
 |--------------------|-------|
 | Exact Match (EM)   | 0.49  |
 | F1 Score           | 0.52  |
+
+</br>
 
 ## Conclusion
 In this project, I have developed a QA system designed to answer customers question based on Amazon product reviews. I have explored various techniques and experimented with various tecnologies. 
